@@ -2,6 +2,11 @@
   text-align: center;
   font-family: avenir next;
   min-height: 1000px;
+  position: unset;
+}
+
+.contact1 {
+  text-align: start;
 }
 
 .main-btn {
@@ -27,7 +32,6 @@
   top: 120px;
   display: flex;
 }
-
 
 html {
   height: 100%;
@@ -108,7 +112,6 @@ html {
   }
 
   .title-container-top {
-
     width: 20px;
     display: flex;
     text-align: start;
@@ -118,7 +121,7 @@ html {
   }
 
   .title-container {
-/* top:300px; */
+    /* top:300px; */
   }
 
   /* .text-container {
@@ -255,7 +258,6 @@ html {
   width: 100%;
 }
 
-
 .enroll-button2 {
   padding: 27px 72px;
   background-color: red;
@@ -286,7 +288,6 @@ html {
   height: 211px;
 }
 
-
 .string {
   background-color: black;
   color: white;
@@ -304,7 +305,6 @@ html {
 .machine {
   color: red;
 }
-
 
 #coaches {
   display: flex;
@@ -337,8 +337,6 @@ html {
   width: 360px;
 }
 
-
-
 .bring {
   display: flex;
   flex-direction: column;
@@ -351,7 +349,7 @@ html {
 .phone {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   text-decoration: none;
   flex-wrap: wrap;
 }
@@ -382,7 +380,8 @@ p {
   border: none;
 }
 
-.enroll-button:hover {}
+.enroll-button:hover {
+}
 
 .title {
   font-size: 56px;
@@ -396,7 +395,6 @@ p {
   color: white;
   transform: scale(1, 1.1);
 }
-
 
 .title-container {
   display: flex;
@@ -425,7 +423,6 @@ p {
   /* font-weight: 900; */
   font-size: 36px;
 }
-
 
 .profile-img {
   width: 360px;
@@ -457,16 +454,13 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://i.imgur.com/brGnFUA.png);
+  background-image: url('./images/Converted\ Camper.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100%;
 }
-
-
 
 .first {
   display: flex;
