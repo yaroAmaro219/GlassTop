@@ -11,7 +11,7 @@
 
 .main-btn {
   /* margin-top: 300px; */
-  background-color: red;
+  background-color: #3194A3;
   padding: 12px 63px;
   font-size: large;
   color: white;
@@ -76,7 +76,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: red;
+    background-color: #3194A3;
     padding: 36px 36px;
     width: 100%;
     color: white;
@@ -99,7 +99,7 @@ html {
 
   .main-btn {
     /* margin-top: 300px; */
-    background-color: red;
+    background-color: #3194A3;
     padding: 12px 63px;
     font-size: large;
     color: white;
@@ -112,12 +112,12 @@ html {
   }
 
   .title-container-top {
-    width: 20px;
     display: flex;
     text-align: start;
     padding-bottom: 15px;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
   }
 
   .title-container {
@@ -140,9 +140,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://i.imgur.com/brGnFUAl.png) !important;
+    
+    /* background-image: url(https://i.imgur.com/SYH7Y2Rl.jpg) !important;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
 
   .buttons {
@@ -260,7 +261,7 @@ html {
 
 .enroll-button2 {
   padding: 27px 72px;
-  background-color: red;
+  background-color: #3194A3;
   font-size: x-large;
   color: white;
   margin-top: 18px;
@@ -281,7 +282,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: red;
+  background-color: #3194A3;
   padding: 36px 0px;
   width: 100%;
   color: white;
@@ -454,11 +455,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/Converted\ Camper.png');
+  /* background-image: url('https://i.imgur.com/SYH7Y2Rt.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #B528E9;
   min-height: 100%;
 }
 

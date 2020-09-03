@@ -49,7 +49,7 @@ export default class Nav extends Component {
       <>
         <div class="nav">
           <div class='title-container-top'>
-          <a class='nav-title' href='/'> Converted Camper</a>
+          <a class='nav-title' href='/'> Glass Top</a>
         </div>
           <div class='nav-text'>
         {/* <a class='link' href='/enrolls'>Book It</a>
@@ -62,9 +62,7 @@ export default class Nav extends Component {
                 }}
                 >Sign In</button> */}
             </div>
-          {
-            this.state.user
-              ?
+         
               <div class="hamburger">
                 <input type="checkbox" id="nav-toggle" />
                 <label for="nav-toggle">
@@ -101,13 +99,6 @@ export default class Nav extends Component {
                   </ul>
                 </div>
               </div>
-              :
-              <div class='login'>
-                <a href='/login' class='login-btn'>
-                  <h1 class='login-nav'>Login</h1>
-                  </a>
-                </div>
-          }
         </div>
         {/* <Modal open={sign} onClose={this.onCloseModal}>
                     <div className="modal-body">

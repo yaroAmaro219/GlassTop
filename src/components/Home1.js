@@ -8,14 +8,14 @@ export default class Home1 extends Component {
         <div class='first'>
           <div class='right-container'>
             <div class='buttons'>
-              <a class='main-btn' href='/rent' >Rent a camper</a>
-              <a class='main-btn'  href='/host' >Host your camper</a>
+              <a class='main-btn' href='/rent' >Website</a>
+              <a class='main-btn'  href='/host' >Design</a>
           </div>
           
               
               <div class='title-container'>
                 
-                <h1 class='title'>Find your adventure</h1>
+              <h1 class='title'>Find your website</h1>
               </div>
               {/* <div class='sub-container'>
                 <p class='sub-title'>Rentals</p>

@@ -16,14 +16,12 @@
   display: flex;
   text-align: start;
   padding-bottom: 15px;
-  margin: 9px 0 0 36px;
 }
 
 .nav-title {
   text-decoration: none;
   font-weight: 900;
   color: black;
-  margin-left: 18px;
 }
 
 .login-nav {
@@ -230,7 +228,7 @@ button.sign-in {
 
 .menu {
   cursor: pointer;
-  background-color: #e0e26e;
+  background-color: #3194A3;
   -webkit-transition: .53s transform;
   transition: .53s transform;
   -webkit-transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1);
