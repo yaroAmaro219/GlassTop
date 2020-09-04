@@ -18,6 +18,7 @@ import './styles/Enroll.css'
 import './styles/Payment.css'
 import "./App.css";
 import './styles/Login.css'
+import './styles/Design.css'
 // import './styles/Show.css'
 // import './styles/Users.css'
 import './styles/Modal.css'
@@ -187,7 +188,7 @@ class App extends Component {
             <Home
             />
           )}/>
-           <Route exact path="/rent" render={(props) => (
+           <Route exact path="/website" render={(props) => (
             <Rent
             />
           )}/>
@@ -198,7 +199,7 @@ class App extends Component {
               destroyEnroll={this.destroyEnroll}
             />
           )}/>
-           <Route exact path="/host" render={(props) => (
+           <Route exact path="/design" render={(props) => (
             <Host
               
             />

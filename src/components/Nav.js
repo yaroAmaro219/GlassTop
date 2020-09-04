@@ -79,8 +79,8 @@ export default class Nav extends Component {
                 }}
                
                 >Sign In</button></li> */}
-                    <li><a href="/enrolls" class="nav-link"
-                      onClick={() => document.getElementById("nav-toggle").checked = false}>Book It</a></li>
+                    <li><a href="/begin" class="nav-link"
+                      onClick={() => document.getElementById("nav-toggle").checked = false}>Get Started</a></li>
                     <li><a href='/#dates' class="nav-link"
                       onClick={() => document.getElementById("nav-toggle").checked = false}>Dates</a></li>
                     <li><a href="/#location" class="nav-link"
