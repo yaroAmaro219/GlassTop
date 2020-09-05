@@ -1,12 +1,12 @@
 .bio {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 9px 36px;
 }
 
 .bio-pic {
-  width: 308px;
+  width: 408px;
 }
 
 .bio-text {

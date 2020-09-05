@@ -10,10 +10,21 @@
 }
 
 .page1 {
-  padding: 0px 36px 0px 0px;
+  /* padding: 0px 36px 0px 0px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: center; */
+}
+
+.nav-title {
+  display: none;
+}
+
+.portfolio-link {
+  text-transform: capitalize;
+  color: black;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .page-title {
@@ -21,7 +32,23 @@
   background-color: #B528E9;
   width: 100%;
   color: White;
-  padding: 36px ;
+  padding: 36px;
+  margin: 0;
+  border: 1px solid #B528E9;
+  text-align: start;
+  text-transform: capitalize;
+}
+
+.page-title1 {
+  display: flex;
+  background-color: #B528E9;
+  width: 100%;
+  color: White;
+  padding:  18px 36px;
+  margin: 0;
+  border: 1px solid #B528E9;
+  text-align: start;
+  text-transform: capitalize;
 }
 
 .main-btn {
@@ -42,7 +69,7 @@
   background-color: white;
   color: #3194A3;
   border: 2.5px solid #3194A3;
- 
+
 }
 
 .main-btn:hover {
@@ -58,7 +85,7 @@
 
 .buttons {
   position: absolute;
-  top: 120px;
+  top: 140px;
   display: flex;
 }
 
@@ -93,6 +120,14 @@ html {
     overflow: hidden;
     position: absolute;
     min-height: 1000px;
+  }
+
+  .page-title {
+    width: 80% !important;
+  }
+
+  .nav-title {
+    display: unset !important;
   }
 
   html {
@@ -166,7 +201,7 @@ html {
   }
 
   .title-container {
-    top:333px;
+    top: 120px;
   }
 
   /* .text-container {
@@ -185,7 +220,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* background-image: url(https://i.imgur.com/SYH7Y2Rl.jpg) !important;
     background-size: cover;
     background-position: center; */
@@ -426,8 +461,7 @@ p {
   border: none;
 }
 
-.enroll-button:hover {
-}
+.enroll-button:hover {}
 
 .title {
   font-size: 56px;
@@ -444,7 +478,7 @@ p {
 }
 
 .web {
-  padding-top: 36px;
+  padding-top: 246px;
   width: 200px
 }
 

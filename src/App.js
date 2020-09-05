@@ -9,9 +9,12 @@ import Rent from './components/Rent'
 import Host from './components/Host'
 import Login from './components/Login'
 import Contact from './components/Contact'
-// import Users from './components/Users'
-// import Stringing from "./components/Stringing";
-// import Private from './components/Private'
+import Pricing from './components/Pricing'
+import Team from './components/Team'
+import About from './components/About'
+import Work from './components/Work'
+import Reviews from './components/Reviews'
+import Begin from "./components/Begin"
 import insta from './images/instagram1.svg'
 import './styles/Nav.css'
 import './styles/Enroll.css'
@@ -19,8 +22,6 @@ import './styles/Payment.css'
 import "./App.css";
 import './styles/Login.css'
 import './styles/Design.css'
-// import './styles/Show.css'
-// import './styles/Users.css'
 import './styles/Modal.css'
 
 import {
@@ -176,6 +177,7 @@ class App extends Component {
   href="https://fonts.googleapis.com/css?family=AvenirNext"/>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"></link>
         <div class="nav-container">
+        <a class='nav-title' href='/'> Glass Top</a>
           <Nav />
         </div>
         <Switch>
@@ -211,6 +213,36 @@ class App extends Component {
           )} />
           <Route exact path="/contact" render={(props) => (
             <Contact
+              
+            />
+          )}/>
+          <Route exact path="/pricing" render={(props) => (
+            <Pricing
+              
+            />
+          )}/>
+          <Route exact path="/team" render={(props) => (
+            <Team
+              
+            />
+          )}/>
+          <Route exact path="/about" render={(props) => (
+            <About
+              
+            />
+          )}/>
+          <Route exact path="/work" render={(props) => (
+            <Work
+              
+            />
+          )}/>
+          <Route exact path="/reviews" render={(props) => (
+            <Reviews
+              
+            />
+          )}/>
+          <Route exact path="/begin" render={(props) => (
+            <Begin
               
             />
           )}/>

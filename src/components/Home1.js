@@ -8,15 +8,12 @@ export default class Home1 extends Component {
       <div>
         <div class='first'>
           <div class='right-container'>
-            <div class='buttons'>
+              <div class='title-container'>
+              <h1 class='title'>Find your website</h1>
+              <div class='buttons'>
               <a class='main-btn' href='/website' >Website</a>
               <a class='main-btn'  href='/design' >Design</a>
           </div>
-          
-              
-              <div class='title-container'>
-                
-              <h1 class='title'>Find your website</h1>
               <img src={web} class='web'/>
               </div>
               {/* <div class='sub-container'>
