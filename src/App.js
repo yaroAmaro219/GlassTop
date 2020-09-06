@@ -177,7 +177,11 @@ class App extends Component {
   href="https://fonts.googleapis.com/css?family=AvenirNext"/>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"></link>
         <div class="nav-container">
-        <a class='nav-title' href='/'> Glass Top</a>
+          <div class='title1-container'>
+            <a class='nav-title' href='/'> Glass Top </a>
+          
+            <a class='nav-title1' href='/'>Web Developers</a>
+            </div>
           <Nav />
         </div>
         <Switch>

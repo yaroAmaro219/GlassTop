@@ -51,6 +51,11 @@
   text-transform: capitalize;
 }
 
+.title1-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-btn {
   /* margin-top: 300px; */
   background-color: #3194A3;
