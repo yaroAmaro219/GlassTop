@@ -52,9 +52,8 @@ export default class Nav extends Component {
           
 
           <div class='nav-text'>
-          <a class='link' href='/'> Glass Top</a>
         <a class='link' href='/begin'>Get Started</a>
-        <a class='link' href='/work'>Work</a>
+        <a class='link' href='/work'>How We Work</a>
         <a class='link' href='/about'>About Us</a>
         <a class='link' href='/reviews'>Reviews</a>
         <a class='link' href='/contact'>Contact</a>
@@ -81,11 +80,11 @@ export default class Nav extends Component {
                
                 >Sign In</button></li> */}
                     <li><a href="/begin" class="nav-link"
-                      onClick={() => document.getElementById("nav-toggle").checked = false}>Get Started</a></li>
+                      onClick={() => document.getElementById("nav-toggle").checked = false}>Services</a></li>
                     {/* <li><a href='/#dates' class="nav-link"
                       onClick={() => document.getElementById("nav-toggle").checked = false}>About</a></li> */}
                     <li><a href="/work" class="nav-link"
-                      onClick={() => document.getElementById("nav-toggle").checked = false}>Work</a></li>
+                      onClick={() => document.getElementById("nav-toggle").checked = false}>How We Work</a></li>
                     <li><a href="/pricing" class="nav-link"
                       onClick={() => document.getElementById("nav-toggle").checked = false}>Pricing</a></li>
                     <li><a href="/team" class="nav-link"
