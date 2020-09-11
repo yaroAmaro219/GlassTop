@@ -15,7 +15,7 @@ export default class Home1 extends Component {
               <a class='main-btn' href='/contact' >Request Consultation</a>
               {/* <a class='main-btn'  href='/design' >Design</a> */}
           </div>
-              <img src={web} class='web'/>
+              {/* <img src={web} class='web'/> */}
               </div>
               {/* <div class='sub-container'>
                 <p class='sub-title'>Rentals</p>

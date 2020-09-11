@@ -16,14 +16,6 @@ function Nav1() {
 
   return (
     <div>
-     
-        <div class='nav-text'>
-          <a class='link' href='/begin'>Services</a>
-          <a class='link' href='/work'>How We Work</a>
-          <a class='link' href='/about'>About Us</a>
-          <a class='link' href='/reviews'>Reviews</a>
-          <a class='link' href='/contact'>Contact</a>
-        </div>
       <div class='burger-container'>
         <ThemeProvider class='theme' theme={theme}>
           <>

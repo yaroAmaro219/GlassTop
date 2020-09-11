@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: avenir next;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   position: unset;
 }
 
@@ -47,7 +47,6 @@
 
 .page-title {
   display: flex;
-  background-color: #B528E9;
   width: 100%;
   color: White;
   padding: 36px;
@@ -59,12 +58,11 @@
 
 .page-title1 {
   display: flex;
-  background-color: #B528E9;
   width: 100%;
   color: White;
   padding: 18px 36px;
   margin: 0;
-  border: 1px solid #B528E9;
+
   text-align: center;
   text-transform: capitalize;
   width: 90%;
@@ -84,7 +82,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: 550;
-  border: 2.5px solid #3194A3;
+  /* border: 2.5px solid #3194A3; */
   margin: 18px 36px;
   /* white-space: pre-wrap; */
   /* width: 233px; */
@@ -93,7 +91,7 @@
 .main-btn:active {
   background-color: white;
   color: #3194A3;
-  border: 2.5px solid #3194A3;
+  /* border: 2.5px solid #3194A3; */
 
 }
 
@@ -130,6 +128,46 @@ html {
 
 .container {
   display: none;
+}
+
+.vimeo-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.vimeo-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 999;
 }
 
 .inputs {
@@ -170,8 +208,24 @@ html {
   }
 
   .mobile {
+    width: 50%;
     color: white;
-    padding: 36px;
+    padding: 23px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile1 {
+    width: 50%;
+    color: white;
+    padding: 23px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: .01px solid white;
   }
 
   .container {
@@ -180,8 +234,8 @@ html {
   background-color: black;
   width: 100%;
   display: flex !important;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   }
 
   .page-title {
@@ -192,8 +246,12 @@ html {
     display: unset !important;
   }
 
+  .img-nav {
+    width: 33px;
+  }
+
   .footer-container {
-    margin-bottom: 93px;
+    margin-bottom: 63px;
   }
 
   html {
@@ -229,7 +287,7 @@ html {
 
   .main-btn {
     /* margin-top: 300px; */
-    background-color: #3194A3;
+    background-color: transparent;
     padding: 12px 63px;
     font-size: medium;
     color: white;
@@ -255,7 +313,7 @@ html {
 
   .buttons {
     position: absolute;
-    top: 430px;
+    top: 390px;
     display: flex;
   }
 
@@ -269,7 +327,7 @@ html {
   }
 
   .title-container {
-    top: 120px;
+    top: 90px;
   }
 
   /* .text-container {
@@ -546,7 +604,6 @@ p {
 }
 
 .web {
-  padding-top: 18px;
   width: 200px
 }
 
@@ -610,12 +667,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url('https://i.imgur.com/SYH7Y2Rt.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; */
-  background-color: #B528E9;
   min-height: 100%;
 }
 
