@@ -1,7 +1,25 @@
 .submit-button {
   margin-top: 36px;
-  border: none;
-  padding: 3px;
+  border: 1px solid black;
+  padding: 9px;
   background-color: white;
   font-size: larger;
+  cursor: pointer;
+}
+
+.comments {
+  margin-top: 18px;
+  height: 99px;
+  width: 299px;
+}
+
+.input1 {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 48px;
+}
+
+.input-name {
+  margin-bottom: 0;
 }

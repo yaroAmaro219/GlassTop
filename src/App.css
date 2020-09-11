@@ -9,10 +9,11 @@
 }
 
 .page1 {
-  padding: 72px 36px 0px 0px;
+  padding: 72px 36px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .portfolio-link {
@@ -22,13 +23,26 @@
   margin-top: 0;
 }
 
+.work-piece {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
 .contact3 {
-  padding: 72px 0;
+  padding: 36px 0;
+  border: 1px solid black;
+  margin: 36px 0;
 }
 
 .insta-img {
   width: 34px;
+}
+
+.burger-container {
+  display: none;
+
 }
 
 .page-title {
@@ -54,6 +68,7 @@
   text-align: center;
   text-transform: capitalize;
   width: 90%;
+  justify-content: center;
 }
 
 .title1-container {
@@ -113,13 +128,17 @@ html {
   margin-bottom: 0;
 }
 
+.container {
+  display: none;
+}
+
 .inputs {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.dhPaew a{
+.dhPaew a {
   margin: 0px 9px;
 }
 
@@ -145,12 +164,36 @@ html {
     position: absolute;
   }
 
+  .burger-container {
+    display: block !important;
+    
+  }
+
+  .mobile {
+    color: white;
+    padding: 36px;
+  }
+
+  .container {
+    position: fixed;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  }
+
   .page-title {
     width: 80% !important;
   }
 
   .nav-title {
     display: unset !important;
+  }
+
+  .footer-container {
+    margin-bottom: 93px;
   }
 
   html {
@@ -455,7 +498,7 @@ html {
 .phone {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   text-decoration: none;
   flex-wrap: wrap;
 }

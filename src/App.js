@@ -262,6 +262,10 @@ render() {
             />
           )}/>
         </Switch>
+        <div class='container'>
+          <a class='mobile' href='/work'>Case Studies</a>
+          <a class='mobile' href='/contact'>Get In Touch</a>
+        </div>
         <div class='footer-container'>
         
           <div class='footer'>

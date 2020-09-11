@@ -25,7 +25,7 @@ const Menu = ({ open, ...props }) => {
        Our Team
         </a>
       <a href="/contact" tabIndex={tabIndex}>
-        <span aria-hidden="true">📩</span>
+        <span aria-hidden="true"></span>
         Contact
         </a>
         <div class='footer'>

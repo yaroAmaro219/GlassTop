@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 850px) {
   .nav-text {
-    display: none;
+    display: none !important;
   }
 
   .nav {
@@ -142,7 +142,7 @@
 
 .nav-text {
   width: 100%;
-  
+  display: flex; 
 }
 
 .link {

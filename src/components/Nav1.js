@@ -15,17 +15,29 @@ function Nav1() {
   useOnClickOutside(node, () => setOpen(false));
 
   return (
-    <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyles />
-        <div ref={node}>
-          <FocusLock disabled={!open}>
-            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-            <Menu open={open} setOpen={setOpen} id={menuId} />
-          </FocusLock>
+    <div>
+     
+        <div class='nav-text'>
+          <a class='link' href='/begin'>Services</a>
+          <a class='link' href='/work'>How We Work</a>
+          <a class='link' href='/about'>About Us</a>
+          <a class='link' href='/reviews'>Reviews</a>
+          <a class='link' href='/contact'>Contact</a>
         </div>
-      </>
-    </ThemeProvider>
+      <div class='burger-container'>
+        <ThemeProvider class='theme' theme={theme}>
+          <>
+            <GlobalStyles />
+            <div ref={node}>
+              <FocusLock disabled={!open}>
+                <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+                <Menu open={open} setOpen={setOpen} id={menuId} />
+              </FocusLock>
+            </div>
+          </>
+        </ThemeProvider>
+        </div>
+      </div>
   );
 }
 
