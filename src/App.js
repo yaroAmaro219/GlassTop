@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useRef, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
 import ReactPlayer from "react-player"
 import Nav from "./components/Nav";
@@ -20,7 +20,8 @@ import Nav1 from './components/Nav1'
 import insta from './images/instagram1.svg'
 import cloud from './images/197-cloud-check.svg'
 import stack from './images/047-stack.svg'
-import GlassTop from './Video/coverr--04-20-old-man-_-girl-grandfather-and-grandaughter-using-laptop-03-5305.mp4'
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
+// import GlassTop from './Video/coverr--04-20-old-man-_-girl-grandfather-and-grandaughter-using-laptop-03-5305.mp4'
 import './styles/Nav.css'
 import './styles/Enroll.css'
 import './styles/Payment.css'
@@ -182,36 +183,75 @@ class App extends Component {
       }
     }));
   }
-  
 
-render() {
+ TestNav = () => {
+    const [change, setChange] = useState(false);
+    const changePosition = 10;
+  
+    let position = useWindowScrollPosition();
+    // position == { x: 0, y: 0 }
+  
+    if (position.y > changePosition && !change) {
+      setChange(true);
+    }
+  
+    if (position.y <= changePosition && change) {
+      setChange(false);
+    }
+  
+    let style = {
+      backgroundColor: change ? "white" : "transparent",
+      transition: ".3s ease",
+      height: "69px",
+      position: "fixed",
+      right: 0,
+      left: 0,
+      top: 0,
+    };
+   
+   let style2 = {
+     color: change ? "#464646" : "white", 
+    }
+
+   let navtext = {
+    width: '100%',
+    display: 'flex',
+  }
+  
+    return (
+      <div style={style}>
+      <div class="nav-container">
+          <div class='title1-container'>
+            <a style={style2} class='nav-title' href='/'> Glass Top </a>
+            <a style={style2} class='nav-title1' href='/'>Web Developers</a>
+          </div>
+          {/* <div class='nav3'> */}
+        <div style={navtext}>
+          <a style={style2} class='link' href='/begin'>Services</a>
+          <a style={style2} class='link' href='/work'>How We Work</a>
+          <a style={style2} class='link' href='/about'>About Us</a>
+          <a style={style2} class='link' href='/reviews'>Reviews</a>
+          <a style={style2} class='link' href='/contact'>Contact</a>
+        {/* </div> */}
+          <div>
+              <Nav1
+              />
+            </div>
+            </div>
+        </div>
+      </div>
+    );
+  }
+
+  render() {
     return (
       <div class="App">
         <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=AvenirNext"/>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"></link>
-        <div class="nav-container">
-          <div class='title1-container'>
-            <a class='nav-title' href='/'> Glass Top </a>
-            <a class='nav-title1' href='/'>Web Developers</a>
+        <div>
+          <this.TestNav />
           </div>
-          <div class='nav3'>
-        <div class='nav-text'>
-          <a class='link' href='/begin'>Services</a>
-          <a class='link' href='/work'>How We Work</a>
-          <a class='link' href='/about'>About Us</a>
-          <a class='link' href='/reviews'>Reviews</a>
-          <a class='link' href='/contact'>Contact</a>
-        </div>
-          <div class='burger-container'>
-            <Nav1 />
-            </div>
-            </div>
-        </div>
-        {/* <video playsinline autoplay muted loop poster="polina.jpg" id="myVideo">
-        
-          <source src={GlassTop} type="video/mp4"/>
-        </video> */}
         <div class="vimeo-wrapper">
           <iframe src="https://player.vimeo.com/video/457001729?background=1&autoplay=1&loop=1&byline=0&title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>

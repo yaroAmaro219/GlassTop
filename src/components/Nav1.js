@@ -14,8 +14,9 @@ function Nav1() {
 
   useOnClickOutside(node, () => setOpen(false));
 
+  
+
   return (
-    <div>
       <div class='burger-container'>
         <ThemeProvider class='theme' theme={theme}>
           <>
@@ -29,7 +30,6 @@ function Nav1() {
           </>
         </ThemeProvider>
         </div>
-      </div>
   );
 }
 
