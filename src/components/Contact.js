@@ -5,8 +5,8 @@ export default class Contact extends Component {
     return (
       <div class='page1'>
         <div class='contact1'>
-          <h2>Awesomeness awaits!</h2>
-          <h3>Connect with our experts
+          <h2 class='white'>Awesomeness awaits!</h2>
+          <h3 class='white'>Connect with our experts
           </h3>
           <div class='inputs'>
             <h3 class='input-name'>Name:</h3>

@@ -2,17 +2,17 @@
   "short_name": "Glass Top | Web Developers",
   "name": "Glass Top | Web Developers",
   "icons": [{
-      "src": "088-laptop.svg",
+      "src": "./088-laptop.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/svg"
     },
     {
-      "src": "088-laptop.svg",
+      "src": "./088-laptop.svg",
       "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "088-laptop.svg",
+      "src": "./088-laptop.svg",
       "type": "image/svg",
       "sizes": "512x512"
     }

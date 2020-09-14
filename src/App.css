@@ -6,6 +6,11 @@
 
 .contact1 {
   text-align: start;
+  color: white;
+}
+
+.white {
+  color: white;
 }
 
 .page1 {
@@ -35,6 +40,8 @@
   padding: 36px 0;
   border: 1px solid black;
   margin: 36px 0;
+  background-color: white;
+  color: black;
 }
 
 .insta-img {
@@ -95,7 +102,7 @@
 }
 
 .main-btn:active {
-  background-color: white;
+  background-color: '#EFFFFA';
   color: #3194A3;
   /* border: 2.5px solid #3194A3; */
 
@@ -609,6 +616,7 @@ p {
 .title-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   color: white;
   /* top: 150px; */
