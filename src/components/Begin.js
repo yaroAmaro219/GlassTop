@@ -5,7 +5,13 @@ export default class Begin extends Component {
     return (
       <div class='page1'>
         <div class='service-container'>
-          <h1>Get Started</h1>
+          <h1>Development</h1>
+          <h1>We develop online environemnts</h1>
+          <h3>Web App Development</h3>
+          <h1>Design</h1>
+          <h3>Enhance Usability</h3>
+          <h3>Promote user engagement</h3>
+
           </div>
       </div>
     )
