@@ -1,7 +1,9 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import Dropdown from 'react-dropdown';
 import insta from '../../images/instagram1.svg'
+import drop from '../../images/drop-down-arrow.svg'
 
 const Menu = ({ open, ...props }) => {
   
@@ -10,10 +12,11 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
+      <div class='dropdown-title'>
       <a href="/services" tabIndex={tabIndex}>
-        <span aria-hidden="true"></span>
-        Services
-      </a>
+        Services</a>
+        <span aria-hidden="true"><img class='arrow' src={drop}/></span>
+        </div>
       <a href="/work" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
         How We Work

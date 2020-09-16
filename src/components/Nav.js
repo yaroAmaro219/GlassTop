@@ -52,6 +52,7 @@ export default class Nav extends Component {
           
 
           <div class='nav-text'>
+         
         <a class='link' href='/begin'>Get Started</a>
         <a class='link' href='/work'>How We Work</a>
         <a class='link' href='/about'>About Us</a>

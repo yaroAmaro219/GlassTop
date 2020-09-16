@@ -4,6 +4,7 @@ export default class Work extends Component {
   render() {
     return (
       <div class='page1'>
+        <div class='portfolio-container'>
         <h1 class="white">Portfolio</h1>
         <div class='work-piece'>
         <h3 class="white">Tennis Coaches of NYC</h3>
@@ -16,6 +17,7 @@ export default class Work extends Component {
           <div class='work-piece'>
         <h3 class="white">Converted Camper</h3>
           <a class="white" href='https://www.convertedcamper.io/'>Link</a>
+          </div>
           </div>
       </div>
     )

@@ -17,11 +17,18 @@ import Work from './components/Work'
 import Reviews from './components/Reviews'
 import Begin from "./components/Begin"
 import Nav1 from './components/Nav1'
+import WebApp from './components/WebApp'
+import WebDesign from './components/WebDesign'
+import Services from './components/Services'
+import Enterprise from './components/Enterprise'
+import Consulting from './components/Consulting'
+import PWA from './components/PWA'
+import Web from './components/Web'
+import Startup from './components/Startup'
 import insta from './images/instagram1.svg'
 import cloud from './images/197-cloud-check.svg'
 import stack from './images/047-stack.svg'
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
-// import GlassTop from './Video/coverr--04-20-old-man-_-girl-grandfather-and-grandaughter-using-laptop-03-5305.mp4'
 import './styles/Nav.css'
 import './styles/Enroll.css'
 import './styles/Payment.css'
@@ -31,6 +38,8 @@ import './styles/Design.css'
 import './styles/Modal.css'
 import './styles/Contact.css'
 import './styles/Services.css'
+import './styles/Home.css'
+import './styles/Work.css'
 
 import {
   showUser,
@@ -219,10 +228,53 @@ class App extends Component {
           <a style={style2} class='nav-title1' href='/'>Web Developers</a>
         </div>
         <div style={navtext} class='nav-text'>
-          <a style={style2} class='link' href='/begin'>Services</a>
+<div class="dropdown">
+            <a style={style2} class='link' href='/begin'>Services</a>
+            <div class="dropdown-content">
+              <div class="dropdown-content1">
+                <div class='dropdown-column'>
+                  <a class='dropdown-main' href='/consulting'>Consulting</a>
+                  <a class='dropdown-sub' href='/enterprise'>Enterprise</a> 
+                  <a class='dropdown-sub' href='/startup'>Start Up</a> 
+                </div>
+                <div class='dropdown-column'>
+                  <a class='dropdown-main' href='/web'>Web</a>
+                  <a class='dropdown-main' href='/webapp'>Web App</a>
+                  <a class='dropdown-main' href='/webdesign'>Web Design</a>
+                  <a class='dropdown-main' href='/pwa'>PWA</a>
+                </div>
+                <div class='dropdown-column'>
+                  <a class='dropdown-main' href='/webapps'>Mobile Apps</a>
+                  </div>
+                </div>
+  </div>
+            </div>
           <a style={style2} class='link' href='/work'>How We Work</a>
-          <a style={style2} class='link' href='/about'>About Us</a>
-          <a style={style2} class='link' href='/reviews'>Reviews</a>
+          <div class="dropdown">
+            <a style={style2} class='link' href='/portfolio'>Portfolio</a>
+            <div class="dropdown-content-mini">
+              <div class="dropdown-content1">
+                <div class='dropdown-column'>
+                  <a class='dropdown-sub' href='/consulting'>Projects</a>
+                  <a class='dropdown-sub' href='/enterprise'>UI/UX Gallery</a> 
+                
+                </div>
+                </div>
+  </div>
+            </div>
+          <div class="dropdown">
+            <a style={style2} class='link' href='/company'>Company</a>
+            <div class="dropdown-content-mini">
+              <div class="dropdown-content1">
+                <div class='dropdown-column'>
+                  <a class='dropdown-sub' href='/consulting'>About Us</a>
+                  <a class='dropdown-sub' href='/enterprise'>Careers</a> 
+                  <a class='dropdown-sub' href='/startup'>Blog</a> 
+                  <a class='dropdown-sub' href='/startup'>Contact Us</a> 
+                </div>
+                </div>
+  </div>
+            </div>
           <a  class='contact11' href='/contact'>Contact</a>
           </div>
         <div>
@@ -307,6 +359,46 @@ class App extends Component {
           )}/>
           <Route exact path="/begin" render={(props) => (
             <Begin
+              
+            />
+          )}/>
+          <Route exact path="/pwa" render={(props) => (
+            <PWA
+              
+            />
+          )} />
+          <Route exact path="/services" render={(props) => (
+            <Services
+              
+            />
+          )} />
+          <Route exact path="/startup" render={(props) => (
+            <Startup
+              
+            />
+          )} />
+          <Route exact path="/webapp" render={(props) => (
+            <WebApp
+              
+            />
+          )} />
+          <Route exact path="/web" render={(props) => (
+            <Web
+              
+            />
+          )} />
+          <Route exact path="/webdesign" render={(props) => (
+            <WebDesign
+              
+            />
+          )}/>
+          <Route exact path="/enterprise" render={(props) => (
+            <Enterprise
+              
+            />
+          )}/>
+          <Route exact path="/consulting" render={(props) => (
+            <Consulting
               
             />
           )}/>

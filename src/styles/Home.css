@@ -1,0 +1,18 @@
+.main-btn-container {
+  display: flex;
+  padding-top: 333px;
+}
+
+.home1{
+  background: white;
+  color: black;
+  width: 100%;
+min-height: 300px;
+margin-top: 166px;
+}
+
+@media screen and (max-width: 850px) {
+  .main-btn-container {
+    display: none;
+  }
+}
