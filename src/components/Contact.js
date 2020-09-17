@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
+import Nav from './Testnav'
 
 export default class Contact extends Component {
   render() {
     return (
+      <>
+        <Nav/>
       <div class='page1'>
         <div class='contact1'>
-          <h2 class='white'>Awesomeness awaits!</h2>
-          <h3 class='white'>Connect with our experts
+          <h2>Awesomeness awaits!</h2>
+          <h3>Connect with our experts
           </h3>
           <div class='inputs'>
             <h3 class='input-name'>Name:</h3>
@@ -28,6 +31,7 @@ export default class Contact extends Component {
             </div>
         </div>
         </div>
+        </>
     )
   }
 }

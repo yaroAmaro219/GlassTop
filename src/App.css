@@ -7,8 +7,12 @@
 
 .contact1 {
   text-align: start;
-  color: white;
+  color: black;
   padding: 0 18px;
+}
+
+.contact11{
+  transition: 1s ;
 }
 
 .white {
@@ -56,7 +60,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 100vw;
-  color: white;
+  color: black;
 }
 
 .portfolio-link {
@@ -92,7 +96,7 @@
 .page-title {
   display: flex;
   width: 100%;
-  color: White;
+  color: black;
   padding: 36px;
   margin: 0;
   border: 1px solid #b528e9;
@@ -155,7 +159,7 @@
   transition: 1s;
 }
 
-.main-btn:not(:hover){
+.main-btn:not(:hover) {
   background-color: transparent;
   color: #3194a3;
   border: 2.5px solid #3194a3;
@@ -232,14 +236,6 @@ video {
   align-items: flex-start;
 }
 
-.dhPaew a {
-  margin: 0px 9px;
-}
-
-.hqPqpF {
-  top: 20% !important;
-}
-
 #location {
   padding: 36px 270px;
   display: flex;
@@ -302,9 +298,9 @@ video {
     z-index: 5;
   }
 
-  .page-title {
+  /* .page-title {
     width: 80% !important;
-  }
+  } */
 
   .nav-title {
     display: unset !important;
@@ -389,9 +385,9 @@ video {
     margin-right: auto;
   }
 
-  /* .title-container {
-    top: 90px !important;
-  } */
+  .title-container {
+    padding: 0 9px !important;
+  }
 
   /* .text-container {
     padding: 330px 18px 0px 18px !important;
@@ -717,11 +713,23 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 21px 81px;
   color: white;
   /* top: 150px; */
   /* z-index: -1; */
   /* position: relative; */
   /* min-height: 100vh; */
+}
+
+.page-container {
+  width: 100%;
+  margin: 0;
+  padding: 21px 81px;
+  min-height: 33vw;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: black;
 }
 
 .sub-title {

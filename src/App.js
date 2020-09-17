@@ -186,10 +186,12 @@ class App extends Component {
     }));
   }
 
+  
+
  TestNav = () => {
     const [change, setChange] = useState(false);
     const changePosition = 10;
-  
+    
     let position = useWindowScrollPosition();
     // position == { x: 0, y: 0 }
   
@@ -213,7 +215,7 @@ class App extends Component {
    
    let style2 = {
      color: change ? "#464646" : "white", 
-    }
+   }
 
    let navtext = {
      width: '100%',
@@ -247,9 +249,9 @@ class App extends Component {
                   <a class='dropdown-main' href='/webapps'>Mobile Apps</a>
                   </div>
                 </div>
-  </div>
+              </div>
             </div>
-          <a style={style2} class='link' href='/work'>How We Work</a>
+          <a style={style2} class='link' href='/portfolio'>How We Work</a>
           <div class="dropdown">
             <a style={style2} class='link' href='/portfolio'>Portfolio</a>
             <div class="dropdown-content-mini">
@@ -257,13 +259,12 @@ class App extends Component {
                 <div class='dropdown-column'>
                   <a class='dropdown-sub' href='/consulting'>Projects</a>
                   <a class='dropdown-sub' href='/enterprise'>UI/UX Gallery</a> 
-                
                 </div>
                 </div>
-  </div>
+              </div>
             </div>
           <div class="dropdown">
-            <a style={style2} class='link' href='/company'>Company</a>
+            <a style={style2} class='link' href='/about'>Company</a>
             <div class="dropdown-content-mini">
               <div class="dropdown-content1">
                 <div class='dropdown-column'>
@@ -273,7 +274,7 @@ class App extends Component {
                   <a class='dropdown-sub' href='/startup'>Contact Us</a> 
                 </div>
                 </div>
-  </div>
+              </div>
             </div>
           <a  class='contact11' href='/contact'>Contact</a>
           </div>
@@ -292,9 +293,6 @@ class App extends Component {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"></link>
         <div >
           <this.TestNav />
-          </div>
-        <div class="vimeo-wrapper">
-          <iframe src="https://player.vimeo.com/video/457001729?background=1&autoplay=1&loop=1&byline=0&title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         <Switch>
           <Route exact path="/enrolls" render={(props) => (
@@ -347,7 +345,7 @@ class App extends Component {
               
             />
           )}/>
-          <Route exact path="/work" render={(props) => (
+          <Route exact path="/portfolio" render={(props) => (
             <Work
               
             />
@@ -405,7 +403,7 @@ class App extends Component {
         </Switch>
         <div class='container'>
 
-          <a class='mobile' href='/work'><img class='img-nav' src={cloud}/>Case Studies</a>
+          <a class='mobile' href='/#casestudies'><img class='img-nav' src={cloud}/>Case Studies</a>
           <a class='mobile1' href='/contact'><img class='img-nav' src={stack}/>Get In Touch</a>
         </div>
         <div class='footer-container'>

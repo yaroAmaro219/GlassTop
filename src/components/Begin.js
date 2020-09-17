@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import Nav from './Testnav'
 
 export default class Begin extends Component {
   render() {
     return (
+      <>
+        <Nav/>
       <div class='page1'>
         <div class='service-container'>
           <h1>Development</h1>
@@ -13,7 +16,8 @@ export default class Begin extends Component {
           <h3>Promote user engagement</h3>
 
           </div>
-      </div>
+        </div>
+        </>
     )
   }
 }

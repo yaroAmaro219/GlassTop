@@ -17,7 +17,7 @@ const Menu = ({ open, ...props }) => {
         Services</a>
         <span aria-hidden="true"><img class='arrow' src={drop}/></span>
         </div>
-      <a href="/work" tabIndex={tabIndex}>
+      <a href="/portfolio" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
         How We Work
       </a>

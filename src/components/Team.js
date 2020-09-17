@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import Marissa from '../images/56859254072__D0AB336A-94B5-4C39-A7FA-813540F25E2D.JPG'
 import Artemie from '../images/MTenn.JPG'
+import Nav from './Testnav'
 
 export default class Team extends Component {
   render() {
     return (
+      <>
+        <Nav />
       <div class='page1'>
         <h1 class='page-title'>Design</h1>
         <div class='bio'>
@@ -25,7 +28,8 @@ export default class Team extends Component {
           <p class='blurb'>Artemie has been pursuing web development since highschool when he took his first program course. He then graduated from Georgia Southern with a degree in Finance and thereafter attended General Assembly's web development bootcamp. He has developed countless websites since then.  </p>
           </div>
         </div>
-      </div>
+        </div>
+        </>
     )
   }
 }
