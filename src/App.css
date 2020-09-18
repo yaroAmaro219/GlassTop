@@ -8,7 +8,7 @@
 .contact1 {
   text-align: start;
   color: black;
-  padding: 0 18px;
+  padding: 0 81px;
 }
 
 .contact11{
@@ -78,7 +78,7 @@
 }
 
 .contact3 {
-  padding: 36px 0;
+  padding: 0 18px;
   border: 1px solid black;
   margin: 36px 0;
   background-color: white;
@@ -176,7 +176,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: 550;
-  margin: 9px;
+  margin: 18px 0;
   white-space: nowrap;
   width: 233px;
   transition: 0.3;
@@ -323,10 +323,6 @@ video {
 }
 
 @media screen and (max-width: 850px) {
-  /* .App {
-    width: 100%;
-  } */
-
   .burger-container {
     display: block !important;
   }
@@ -366,6 +362,10 @@ video {
     border-left: 0.01px solid white;
   }
 
+  .contact1 {
+    padding: 0 18px;
+  }
+
   .container {
     position: fixed;
     bottom: 0;
@@ -376,10 +376,6 @@ video {
     align-items: center !important;
     z-index: 5;
   }
-
-  /* .page-title {
-    width: 80% !important;
-  } */
 
   .nav-title {
     display: unset !important;
@@ -399,19 +395,6 @@ video {
     scroll-behavior: smooth;
   }
 
-  .footer-container {
-    /* display: flex;
-    text-align: start;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #3194A3;
-    padding: 36px 36px;
-    width: 100%;
-    color: white;
-    height: 211px; */
-  }
-
   .blurb {
     text-align: justify;
     margin: 0;
@@ -427,17 +410,15 @@ video {
   }
 
   .main-btn {
-    /* margin-top: 300px; */
     background-color: transparent;
-    padding: 12px 63px;
+    padding: 18px 63px;
     font-size: medium;
     color: white;
     text-transform: uppercase;
     font-weight: 550;
     border: 2.5px solid black;
-    margin: 36px 0;
+    margin: 23px 0;
     white-space: nowrap;
-    /* width: 233px; */
     transition: 0.3;
   }
 

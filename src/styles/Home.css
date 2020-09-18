@@ -7,14 +7,14 @@
   background-color: white;
   color: black;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   margin-top: 196px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: start;
-  padding: 0px 18px;
+  padding: 18px 81px;
 }
 
 .standout {
@@ -26,5 +26,10 @@
 @media screen and (max-width: 850px) {
   .main-btn-container {
     display: none;
+  }
+
+  .home1 {
+    padding: 18px;
+    min-height: 200px;
   }
 }

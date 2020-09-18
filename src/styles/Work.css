@@ -9,24 +9,100 @@
   background-color: white;
 }
 
-.work-piece {
-  border-bottom: 1px solid black;
+.portfolio-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: flex-start;
+  width: 100%;
+}
+
+.intro {
+  text-align: start;
+
+}
+
+.title-tennis {
+  color: #5B78B1;
+  text-align: start;
+  padding: 0px 18px;
+}
+
+.title-mind {
+  color: #ACB55E;
+  text-align: start;
+  padding: 0px 18px;
+}
+
+.title-camper {
+  color: #74588B;
+  text-align: start;
+  padding: 0px 18px;
+}
+
+.title-dog {
+  color: #C2805A;
+  text-align: start;
+  padding: 0px 18px;
+}
+
+.work-piece-tennis {
+  border-bottom: 2px solid #7DABFB;
   padding-bottom: 36px;
   margin-bottom: 36px;
   display: flex;
+  flex-direction: column;
+}
+
+.work-piece-mind {
+  border-bottom: 2px solid #ACB55E;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-piece-camper {
+  border-bottom: 2px solid #74588B;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-piece-dog {
+  border-bottom: 2px solid #C2805A;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-img {
+  width: 30rem;
+}
+
+.portfolio-img:hover {
+  width: 30rem;
+  box-shadow: 0vw 0.2vw 1vw 1vw rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 850px) {
   .portfolio-container {
-    padding: 18px;
+    padding: 0px;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: start;
   }
 
+  .portfolio-intro {
+    padding: 0 18px;
+  }
+
   .work-piece {
-align-items: center;
-justify-content: center;
-width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
