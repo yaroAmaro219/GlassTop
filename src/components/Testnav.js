@@ -46,7 +46,7 @@ export default class Testnav extends Component {
         </div>
         <div style={navtext} class='nav-text'>
 <div class="dropdown">
-            <a style={style2} class='link' href='/begin'>Services</a>
+            <a style={style2} class='link3' href='/begin'>Services</a>
             <div class="dropdown-content">
               <div class="dropdown-content1">
                 <div class='dropdown-column'>
@@ -66,20 +66,20 @@ export default class Testnav extends Component {
                 </div>
               </div>
             </div>
-          <a style={style2} class='link' href='/portfolio'>How We Work</a>
+          <a style={style2} class='link3' href='/how-we-work'>How We Work</a>
           <div class="dropdown">
-            <a style={style2} class='link' href='/portfolio'>Portfolio</a>
+            <a style={style2} class='link3' href='/portfolio'>Portfolio</a>
             <div class="dropdown-content-mini">
               <div class="dropdown-content1">
                 <div class='dropdown-column'>
-                  <a class='dropdown-sub' href='/consulting'>Projects</a>
+                  <a class='dropdown-sub' href='/portfolio'>Projects</a>
                   <a class='dropdown-sub' href='/enterprise'>UI/UX Gallery</a> 
                 </div>
                 </div>
               </div>
             </div>
           <div class="dropdown">
-            <a style={style2} class='link' href='/about'>Company</a>
+            <a style={style2} class='link3' href='/about'>Company</a>
             <div class="dropdown-content-mini">
               <div class="dropdown-content1">
                 <div class='dropdown-column'>

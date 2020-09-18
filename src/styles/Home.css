@@ -3,12 +3,24 @@
   padding-top: 333px;
 }
 
-.home1{
-  background: white;
+.home1 {
+  background-color: white;
   color: black;
   width: 100%;
-min-height: 300px;
-margin-top: 166px;
+  min-height: 200px;
+  margin-top: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  padding: 0px 18px;
+}
+
+.standout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 850px) {

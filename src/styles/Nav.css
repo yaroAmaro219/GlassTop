@@ -139,6 +139,25 @@
   /* z-index: 2; */
 }
 
+.link3 {
+  text-decoration: none;
+  margin: 0 18px;
+  padding: 18px;
+  font-weight: 900;
+  transition: .3s;
+  /* z-index: 2; */
+}
+
+.link3:hover {
+  color: black !important;
+  text-decoration: none;
+  margin: 0 18px;
+  padding: 18px;
+  font-weight: 900;
+  transition: .3s;
+  /* z-index: 2; */
+}
+
 .contact11 {
   color: white;
   background-color: black;
@@ -172,11 +191,11 @@
 
 
 
-.link:hover {
-  color: rgb(94, 92, 92) !important;
+/* .link:hover {
+  color: black !important;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 #bar {
   color: white;

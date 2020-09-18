@@ -1,6 +1,6 @@
 .portfolio-container {
   margin: 0px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -9,8 +9,24 @@
   background-color: white;
 }
 
-@media screen and (max-width: 850px) {
-.portfolio-container {
-  padding: 18px; 
+.work-piece {
+  border-bottom: 1px solid black;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  display: flex;
 }
+
+@media screen and (max-width: 850px) {
+  .portfolio-container {
+    padding: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .work-piece {
+align-items: center;
+justify-content: center;
+width: 100%;
+  }
 }

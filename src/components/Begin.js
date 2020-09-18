@@ -7,7 +7,7 @@ export default class Begin extends Component {
       <>
         <Nav/>
       <div class='page1'>
-        <div class='service-container'>
+        <div class='page-container'>
           <h1>Development</h1>
           <h1>We develop online environemnts</h1>
           <h3>Web App Development</h3>

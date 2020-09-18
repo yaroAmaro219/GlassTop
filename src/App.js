@@ -22,6 +22,7 @@ import WebDesign from './components/WebDesign'
 import Services from './components/Services'
 import Enterprise from './components/Enterprise'
 import Consulting from './components/Consulting'
+import HowWeWork from './components/HowWeWork'
 import PWA from './components/PWA'
 import Web from './components/Web'
 import Startup from './components/Startup'
@@ -325,6 +326,11 @@ class App extends Component {
               
             />
           )} />
+          <Route exact path="/how-we-work" render={(props) => (
+            <HowWeWork
+              
+            />
+          )} />
           <Route exact path="/contact" render={(props) => (
             <Contact
               
@@ -403,7 +409,7 @@ class App extends Component {
         </Switch>
         <div class='container'>
 
-          <a class='mobile' href='/#casestudies'><img class='img-nav' src={cloud}/>Case Studies</a>
+          <a class='mobile' href='/portfolio'><img class='img-nav' src={cloud}/>Case Studies</a>
           <a class='mobile1' href='/contact'><img class='img-nav' src={stack}/>Get In Touch</a>
         </div>
         <div class='footer-container'>

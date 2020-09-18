@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import artemie from "../images/Screenshot 2020-08-22 at 10.14.20 AM.jpeg";
-// import jacob from '../MTenn.JPG'
-// import Andrew from '../images/Screen Shot 2020-03-23 at 11.55.30 AM.jpeg'
+
 
 export default class Home extends Component {
   render() {
