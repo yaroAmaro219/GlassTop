@@ -173,7 +173,7 @@
   background-color: transparent;
   padding: 18px;
   font-size: medium;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-weight: 550;
   margin: 18px 0;
@@ -187,20 +187,18 @@
 
 .main-btn:active {
   background-color: white;
-  color: #3194a3;
   /* border: 2.5px solid #3194A3; */
 }
 
 .main-btn:hover {
-  background-color: white;
-  color: #3194a3;
-  transition: 1s;
+  background-color: black;
+  color: white;
+  transition: .6s;
 }
 
 .main-btn:not(:hover) {
   background-color: transparent;
-  color: #3194a3;
-  transition: 1s;
+  transition: .6s;
 }
 
 .main-btn1:not(:hover) {
@@ -413,7 +411,7 @@ video {
     background-color: transparent;
     padding: 18px 63px;
     font-size: medium;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-weight: 550;
     border: 2.5px solid black;

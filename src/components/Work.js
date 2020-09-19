@@ -18,19 +18,19 @@ export default class Work extends Component {
             </div>
             <div class='work-piece-tennis'>
               <h3 class='title-tennis'>Tennis Coaches of NYC</h3>
-              <a href='http://tenniscoachesofnyc.com/'><img class='portfolio-img' src={Ball}/></a>
+              <a target="_blank" rel="noopener noreferrer" href='http://tenniscoachesofnyc.com/'><img class='portfolio-img' src={Ball}/></a>
             </div>
             <div class='work-piece-mind'>
               <h3 class='title-mind'>Mind Guided Meditation</h3>
-              <a href='https://www.mindguidedmeditation.com/'><img class='portfolio-img' src={Mind}/></a>
+              <a target="_blank" rel="noopener noreferrer" href='https://www.mindguidedmeditation.com/'><img class='portfolio-img' src={Mind}/></a>
             </div>
             <div class='work-piece-camper'>
               <h3 class='title-camper'>Converted Camper</h3>
-              <a href='https://www.convertedcamper.io/'><img class='portfolio-img' src={Camper}/></a>
+              <a target="_blank" rel="noopener noreferrer" href='https://www.convertedcamper.io/'><img class='portfolio-img' src={Camper}/></a>
             </div>
             <div class='work-piece-dog'>
               <h3 class='title-dog'>Dog Sitting NYC</h3>
-              <a href='https://www.dogsittingnyc.com/'><img class='portfolio-img' src={Dog}/></a>
+              <a target="_blank" rel="noopener noreferrer" href='https://www.dogsittingnyc.com/'><img class='portfolio-img' src={Dog}/></a>
             </div>
           </div>
         </div>

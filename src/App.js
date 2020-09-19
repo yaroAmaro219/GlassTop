@@ -44,9 +44,8 @@ import './styles/Work.css'
 
 import {
   showUser,
-  postEnroll,
-  showEnroll,
-  destroyEnroll,
+  postContact,
+  showContact,
   registerUser,
   loginUser,
   verifyUser,
@@ -58,20 +57,11 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      firstname: '',
-      lastname: '',
+      name: '',
       phone: '',
       email: '',
-      childname: '',
-      childage: '',
-      startdate: new Date(),
-      enddate: new Date(),
-      question: '',
-      consent: false,
-      modal: false,
-      toggle: false,
-      enroll: '',
-      typeofday: '',
+      company: '',
+      comment: '',
       authFormData: {
         email: '',
         password:''
@@ -96,29 +86,23 @@ class App extends Component {
   }
 
 
-  addEnroll = async (firstname, lastname, phone, email, childname, childage, question, consent, startdate, enddate, typeofday) => {
-   const newEnroll = await postEnroll({
-      firstname: firstname,
-      lastname: lastname,
-      phone: phone,
+  addContact = async (name, email, phone, company, comment) => {
+   const newContact = await postContact({
+      name: name,
       email: email,
-      childname: childname,
-      childage: childage,
-      question: question,
-      consent: consent,
-      startdate: startdate,
-      enddate: enddate,
-      typeofday: typeofday
+      phone: phone,
+      company: company,
+      comment: comment,
    })
     this.setState(prevState => ({
-      enroll: newEnroll,
+      contact: newContact,
     }))
   }
 
-  getEnroll = async () => {
-    const enroll = await showEnroll();
-    if (enroll) {
-      this.setState({ enroll })
+  getContact = async () => {
+    const contact = await showContact();
+    if (contact) {
+      this.setState({ contact })
     }
   }
 
@@ -130,17 +114,6 @@ class App extends Component {
     })
   }
 
-  deleteEnroll = async (id) => {
-    await destroyEnroll(id);
-    this.setState(prevState => ({
-      personalPost: {
-        ...prevState.personalPost,
-        posts: prevState.personalPost.posts.filter((post) => {
-          return post.id !== id 
-        })
-      }
-    }))
-  }
 
   handleLogin = async (e) => {
     e.preventDefault();
@@ -187,7 +160,6 @@ class App extends Component {
     }));
   }
 
-  
 
  TestNav = () => {
     const [change, setChange] = useState(false);
@@ -333,7 +305,7 @@ class App extends Component {
           )} />
           <Route exact path="/contact" render={(props) => (
             <Contact
-              
+              addContact={this.addContact}
             />
           )}/>
           <Route exact path="/pricing" render={(props) => (

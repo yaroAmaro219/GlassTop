@@ -7,8 +7,6 @@
   width: 100%;
   position: fixed;
   background-color: transparent;
-  /* z-index: 22; */
-  box-shadow: 0vw 0.2vw .3vw .1vw rgba(0, 0, 0, 0.1);
 }
 
 .hamburger {
@@ -26,7 +24,7 @@
   font-weight: 900;
   white-space: nowrap;
   text-transform: uppercase;
-  color:gray;
+  color: gray;
   /* margin-right: auto; */
 }
 

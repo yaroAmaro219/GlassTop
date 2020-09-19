@@ -8,13 +8,17 @@
   color: black;
   width: 100%;
   min-height: 300px;
-  margin-top: 196px;
+  margin-top: 216px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: start;
   padding: 18px 81px;
+}
+
+.button-home-container {
+  padding-top: 166px;
 }
 
 .standout {

@@ -19,12 +19,16 @@ export default class Home1 extends Component {
         <div class='home1'>
           <h2 class='standout'>How we stand out - we are proactive experts</h2>
           <p>We focus on incorporating Agile development priniciples keeping our process as lightweight and efficient as possible.</p>
-          <a class="main-btn" href='/contact'>Request Consultation</a>
+          <div class='button-home-container'>
+            <a class="main-btn" href='/contact'>Request Consultation</a>
+            </div>
         </div>
         <div class='home1'id='casestudies'>
           <h2>Case Studies</h2>
           <p>We have worked with several businesses to enhance their digital precense and increase their business income through improved online accesability.</p>
-          <a class="main-btn" href='/portfolio'>View Portfolio</a>
+          <div class='button-home-container'>
+            <a class="main-btn" href='/portfolio'>View Portfolio</a>
+            </div>
         </div> 
         </div>
     )

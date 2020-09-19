@@ -18,7 +18,7 @@ const Burger = ({ open, setOpen, ...props }) => {
   }
 
   let style2 = {
-    background: change ? "#464646" : "white" , 
+    background: change ? "#464646" : "#3295A3" , 
   }
   
   const isExpanded = open ? true : false;
