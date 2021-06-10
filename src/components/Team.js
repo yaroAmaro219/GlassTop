@@ -6,7 +6,7 @@ import Nav from './Testnav'
 export default class Team extends Component {
   render() {
     return (
-      <>
+      <div>
         <Nav />
       <div class='page1'>
         <h1 class='page-title'>Design</h1>
@@ -29,7 +29,7 @@ export default class Team extends Component {
           </div>
         </div>
         </div>
-        </>
+        </div>
     )
   }
 }

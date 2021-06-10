@@ -24,7 +24,7 @@ export default class Contact extends Component {
   render() {
     const {addContact} = this.props
     return (
-      <>
+      <div>
         <Nav/>
       <div class='page1'>
         <div class='contact1'>
@@ -61,7 +61,7 @@ export default class Contact extends Component {
             </div>
         </div>
         </div>
-        </>
+        </div>
     )
   }
 }

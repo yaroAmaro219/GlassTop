@@ -4,7 +4,7 @@ import Nav from './Testnav'
 export default class Begin extends Component {
   render() {
     return (
-      <>
+      <div>
         <Nav/>
       <div class='page1'>
         <div class='page-container'>
@@ -17,7 +17,7 @@ export default class Begin extends Component {
 
           </div>
         </div>
-        </>
+        </div>
     )
   }
 }

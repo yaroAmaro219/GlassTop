@@ -19,7 +19,7 @@ function Nav1() {
   return (
       <div class='burger-container'>
         <ThemeProvider class='theme' theme={theme}>
-          <>
+          <div>
             <GlobalStyles />
             <div ref={node}>
               <FocusLock disabled={!open}>
@@ -27,7 +27,7 @@ function Nav1() {
                 <Menu open={open} setOpen={setOpen} id={menuId} />
               </FocusLock>
             </div>
-          </>
+          </div>
         </ThemeProvider>
         </div>
   );

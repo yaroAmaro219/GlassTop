@@ -46,7 +46,7 @@ export default class Nav extends Component {
   render() {
     // const { login, sign } = this.state;
     return (
-      <>
+      <div>
         <div class="nav">
      
           
@@ -168,7 +168,7 @@ export default class Nav extends Component {
          
           </div>
           </Modal>
-        </>
+        </div>
     )
   }
 }

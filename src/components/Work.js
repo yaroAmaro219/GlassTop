@@ -8,7 +8,7 @@ import Dog from '../images/Dog Sitting NYC.png'
 export default class Work extends Component {
   render() {
     return (
-      <>
+      <div>
         <Nav/>
         <div class='page1'>
           <div class='portfolio-container'>
@@ -34,7 +34,7 @@ export default class Work extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

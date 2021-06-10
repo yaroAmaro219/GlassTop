@@ -4,13 +4,13 @@ import Nav from './Testnav'
 export default class Startup extends Component {
   render() {
     return (
-      <>
+      <div>
         <Nav/>
       <div class='page1'>
         <h1>Startup Consulting</h1>
         
         </div>
-        </>
+        </div>
     )
   }
 }

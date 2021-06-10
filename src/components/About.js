@@ -5,7 +5,7 @@ import '../styles/About.css'
 export default class About extends Component {
   render() {
     return (
-      <>
+      <div>
         <Nav/>
         <div class='page1'>
           <div class='about-contianer'>
@@ -14,7 +14,7 @@ export default class About extends Component {
             <p>Our mission it to create the online enviornonemt neccesary for business's and people to succeed at their ambitions. We work comprehensively to create the most attractive website possible.</p>
             </div>
         </div>
-      </>
+      </div>
     )
   }
 }

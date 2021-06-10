@@ -5,6 +5,19 @@
   /* min-height: 100vw; */
 }
 
+#nav {
+  animation: fadeMe 3s;
+}
+
+@keyframes fadeMe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .contact1 {
   text-align: start;
   color: black;
@@ -320,7 +333,7 @@ video {
   align-items: flex-start;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1045px) {
   .burger-container {
     display: block !important;
   }

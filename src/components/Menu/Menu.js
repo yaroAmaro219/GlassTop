@@ -8,26 +8,37 @@ import drop from '../../images/drop-down-arrow.svg'
 const Menu = ({ open, ...props }) => {
   
   const isHidden = open ? true : false;
-  const tabIndex = isHidden ? 0 : -1;
+  // const tabIndex = isHidden ? 0 : -1;
+  const background = isHidden ? 'block' : 'none' 
+
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
   return (
-    <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <div class='dropdown-title'>
-      <a href="/services" tabIndex={tabIndex}>
+    <div >
+    <StyledMenu open={open}  id="nav" aria-hidden={!isHidden} {...props}>
+      {/* <div class='dropdown-title' id="myDiv" > */}
+      <a href="/services" > 
         Services</a>
-        <span aria-hidden="true"><img class='arrow' src={drop}/></span>
-        </div>
-      <a href="/portfolio" tabIndex={tabIndex}>
+        {/* <span aria-hidden="true"><img class='arrow' src={drop}/></span> */}
+        {/* </div> */}
+      <a href="/portfolio" >
         <span aria-hidden="true"></span>
         How We Work
       </a>
-      <a href="/about" tabIndex={tabIndex}>
+      <a href="/about" >
        About Us
         </a>
-        <a href="/team" tabIndex={tabIndex}>
+        <a href="/team" >
        Our Team
         </a>
-      <a href="/contact" tabIndex={tabIndex}>
+      <a href="/contact" >
         <span aria-hidden="true"></span>
         Contact
         </a>
@@ -49,6 +60,7 @@ const Menu = ({ open, ...props }) => {
           </div> */}
 
     </StyledMenu>
+    </div>
   )
 }
 
